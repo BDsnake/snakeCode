@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Main-Class: com.easyEat.ApplicationMain
+Class-Path: spring-boot-test-2.5.4.jar assertj-core-3.19.0.jar jakarta.a
+ nnotation-api-1.3.5.jar lombok-1.18.24.jar spring-jdbc-5.3.9.jar byte-b
+ uddy-1.10.20.jar json-smart-2.3.jar spring-test-5.3.9.jar junit-platfor
+ m-engine-1.7.2.jar jul-to-slf4j-1.7.32.jar jackson-datatype-jdk8-2.12.4
+ .jar protobuf-java-3.11.4.jar spring-security-crypto-5.5.2.jar logback-
+ classic-1.2.5.jar spring-tx-5.3.9.jar jackson-core-2.12.5.jar spring-bo
+ ot-starter-2.5.4.jar snakeyaml-1.28.jar opentest4j-1.2.0.jar spring-boo
+ t-test-autoconfigure-2.5.4.jar fastjson2-extension-2.0.7.graal.jar spri
+ ng-boot-starter-tomcat-2.5.4.jar spring-boot-starter-web-2.5.4.jar myba
+ tis-spring-2.0.6.jar apiguardian-api-1.1.0.jar xmlunit-core-2.8.2.jar j
+ son-path-2.5.0.jar jsqlparser-4.2.jar junit-jupiter-5.7.2.jar commons-l
+ ang3-3.9.jar mybatis-plus-annotation-3.4.3.4.jar spring-security-config
+ -5.5.2.jar jakarta.activation-api-1.2.2.jar junit-jupiter-api-5.7.2.jar
+  junit-jupiter-params-5.7.2.jar mybatis-plus-boot-starter-3.4.3.4.jar s
+ pring-context-5.3.9.jar tomcat-embed-websocket-9.0.52.jar mybatis-plus-
+ extension-3.4.3.4.jar jsonassert-1.5.0.jar HikariCP-4.0.3.jar javaee-ap
+ i-8.0.1.jar junit-platform-commons-1.7.2.jar mybatis-plus-generator-3.2
+ .0.jar mockito-junit-jupiter-3.9.0.jar slf4j-api-1.7.30.jar spring-web-
+ 5.3.9.jar junit-jupiter-engine-5.7.2.jar byte-buddy-agent-1.10.20.jar s
+ pring-boot-starter-jdbc-2.5.4.jar accessors-smart-1.2.jar log4j-to-slf4
+ j-2.14.1.jar spring-jcl-5.3.9.jar fastjson2-2.0.9.jar android-json-0.0.
+ 20131108.vaadin1.jar activation-1.1.jar jakarta.xml.bind-api-2.3.3.jar 
+ hamcrest-2.2.jar spring-boot-starter-json-2.5.4.jar mybatis-plus-core-3
+ .4.3.4.jar spring-core-5.3.9.jar jackson-annotations-2.12.4.jar spring-
+ webmvc-5.3.9.jar spring-boot-2.5.4.jar spring-boot-autoconfigure-2.5.3.
+ jar mockito-core-3.9.0.jar spring-security-web-5.5.2.jar velocity-engin
+ e-core-2.2.jar spring-boot-starter-security-2.5.4.jar jackson-module-pa
+ rameter-names-2.12.4.jar mybatis-3.5.7.jar objenesis-3.2.jar jackson-da
+ tatype-jsr310-2.12.4.jar javax.mail-1.6.2.jar spring-beans-5.3.9.jar my
+ sql-connector-java-8.0.26.jar logback-core-1.2.5.jar log4j-api-2.14.1.j
+ ar hutool-all-5.7.22.jar spring-security-core-5.5.2.jar tomcat-embed-co
+ re-9.0.52.jar spring-boot-starter-logging-2.5.4.jar mybatis-plus-3.4.3.
+ 4.jar asm-5.0.4.jar tomcat-embed-el-9.0.52.jar jackson-databind-2.12.4.
+ jar spring-boot-starter-test-2.5.4.jar spring-expression-5.3.9.jar spri
+ ng-aop-5.3.9.jar
+
