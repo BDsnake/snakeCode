@@ -23,8 +23,8 @@ public class AutoCode {
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL);
         dataSourceConfig.setUrl("jdbc:mysql://localhost/easy_eat?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8");
-        dataSourceConfig.setUsername("root");
-        dataSourceConfig.setPassword("qsj123");
+        dataSourceConfig.setUsername("xxxx");
+        dataSourceConfig.setPassword("xxxxxxx");
         dataSourceConfig.setDriverName("com.mysql.cj.jdbc.Driver");
         autoGenerator.setDataSource(dataSourceConfig);
 

@@ -1,7 +1,7 @@
 spring:
   datasource:
-    username: root
-    password: qsj123
+    username: xxxx
+    password: xxxxx
     #?serverTimezone=UTC解决时区的报错
     url: jdbc:mysql://localhost:3306/easy_eat?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver

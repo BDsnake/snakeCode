@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="easy-eat" />
+        <module name="SpringSecurity注册登录代码模板" />
       </profile>
     </annotationProcessing>
   </component>
