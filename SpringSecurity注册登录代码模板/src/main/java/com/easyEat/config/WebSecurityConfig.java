@@ -14,9 +14,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import javax.annotation.Resource;
 import javax.ws.rs.HttpMethod;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * @author BDsnake
@@ -40,10 +45,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .cors().configurationSource(corsConfigurationSource())
+                .and()
+                .csrf().disable()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/register").permitAll() // 允许post请求/add-user，而无需认证
                 .antMatchers(HttpMethod.POST, "/login").permitAll() // 允许post请求/add-user，而无需认证
-                .antMatchers("/kfc/**").permitAll()
+                .antMatchers("/api/**").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/user/**").hasAnyRole("ADMIN","USER")
                 .anyRequest().authenticated()// 所有请求都需要验证
@@ -60,7 +68,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable();// post请求要关闭csrf验证,不然访问报错；实际开发中开启，需要前端配合传递其他参数
     }
-
+    @Bean
+    CorsConfigurationSource corsConfigurationSource(){
+        CorsConfiguration corsConfiguration = new CorsConfiguration();
+        corsConfiguration.setAllowedHeaders(Collections.singletonList("*"));
+        corsConfiguration.setAllowedMethods(Collections.singletonList("*"));
+        corsConfiguration.setAllowedOrigins(Collections.singletonList("*"));
+        corsConfiguration.setMaxAge(3600L);
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**",corsConfiguration);
+        return source;
+    }
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
